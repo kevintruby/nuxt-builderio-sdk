@@ -1,0 +1,8 @@
+services:
+  nuxt:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ".:/app"
+    command: /bin/sh -c "npm i && npm run dev"
